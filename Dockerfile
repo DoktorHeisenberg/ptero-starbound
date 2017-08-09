@@ -13,6 +13,4 @@ WORKDIR /home/container
 
 COPY ./entrypoint.sh /entrypoint.sh
 
-COPY ./start.sh /start.sh
-
 CMD ["/bin/ash", "/entrypoint.sh"]
