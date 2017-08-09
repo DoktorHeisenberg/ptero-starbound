@@ -1,11 +1,11 @@
 #!/bin/bash
 sleep 5
 
-cd /home/container
+cd /home/container/linux
 
 # Replace Startup Variables
 MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
-echo ":/home/container$ ${MODIFIED_STARTUP}"
+echo ":/home/container/linux$ ${MODIFIED_STARTUP}"
 
 # Run the Server
 ${MODIFIED_STARTUP}
