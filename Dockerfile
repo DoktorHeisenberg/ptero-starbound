@@ -1,9 +1,8 @@
-FROM frolvlad/alpine-glibc
+FROM alpine:latest
 
 MAINTAINER Michael Friebe, <michael@friebe.it>
 RUN apk update \
  && apk upgrade \
- && apk add --no-cache --update rsync \
  && adduser -D -h /home/container container
 
 USER container
