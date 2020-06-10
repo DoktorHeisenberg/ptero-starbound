@@ -2,7 +2,7 @@ FROM debian:stretch
 
 MAINTAINER Michael Friebe, <michael@friebe.it>
 RUN apt-get update \
- && apt-get install lib32gcc1 libvorbisfile3 \
+ && apt-get -y install lib32gcc1 libvorbisfile3 \
  && adduser -D -h /home/container container
 
 USER container
